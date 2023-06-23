@@ -44,11 +44,9 @@
 
             <div class="col-2 p-0 mt-2">
                 <ul class="nav nav-pills flex-column mb-auto">
-                    <li th:each="authenticatedUserRole : ${authenticatedUserRoles}"
-                        th:if="${authenticatedUserRole.authority.contains('ROLE_ADMIN')}" class="nav-item">
-                        <a th:href="@{/admin}" class="nav-link active"
-                           aria-current="page">
-                            Admin
+                    <li>
+                        <a th:href="@{/admin}" class="nav-link active">
+                           Admin
                         </a>
                     </li>
                     <li class="nav-item">
